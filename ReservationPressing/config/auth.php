@@ -65,15 +65,15 @@ return [
     */
 
     'providers' => [
-        'users' => [
-            'driver' => 'eloquent',
-            'model' => App\User::class,
-        ],
-
         // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
+        //     'driver' => 'eloquent',
+        //     'model' => App\User::class,
         // ],
+
+        'users' => [
+            'driver' => 'database',
+            'table' => 'Clients',
+        ],
     ],
 
     /*
@@ -97,7 +97,7 @@ return [
 
     'passwords' => [
         'users' => [
-            'provider' => 'users',
+            'provider' => 'Clients',
             'email' => 'auth.emails.password',
             'table' => 'password_resets',
             'expire' => 60,

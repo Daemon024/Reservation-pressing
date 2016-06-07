@@ -7,10 +7,16 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-    	"laravelcollective/html": "5.2.*"
+    	"laravelcollective/html": "5.2.*",
+        "fx3costa/laravelchartjs": "*",
+        "nesbot/carbon": "^1.21",
+        "barryvdh/laravel-debugbar": "^2.2",
+        "maddhatter/laravel-fullcalendar": "^1.2",
+	    "makzumi/calendar": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
+        "khill/lavacharts" : "3.0.*",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0",
         "symfony/css-selector": "2.8.*|3.0.*",

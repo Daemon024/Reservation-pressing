@@ -148,6 +148,11 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        "Khill\Lavacharts\Laravel\LavachartsServiceProvider",
+        // Barryvdh\Debugbar\ServiceProvider::class,
+        // "MaddHatter\LaravelFullcalendar\ServiceProvider",
+        // 'Makzumi\Calendar\CalendarServiceProvider',
+        Fx3costa\Laravelchartjs\Providers\ChartjsServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -204,6 +209,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        // 'Calendar' => 'MaddHatter\LaravelFullcalendar\Facades\Calendar',
+        // 'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];

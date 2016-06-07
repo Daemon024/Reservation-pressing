@@ -14,8 +14,26 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/PrestationsTest', 'PrestationsController@RecupPrestations');
+Route::resource('commandes', 'CommandesController');
+Route::resource('client', 'ClientController');
+// Route::get('/dashboard', 'CommandesController@RecupCommandes');
+// Route::get('/booking', 'CommandesController@priseReservation');
 Route::auth();
 
+Route::get('dashboard', [
+    'middleware' => 'auth',
+    'uses' => 'CommandesController@RecupCommandes'
+]);
+
+Route::get('account', [
+    'middleware' => 'auth',
+    'uses' => 'ClientController@ClientEdit'
+]);
+
+Route::get('booking', [
+    'middleware' => 'auth',
+    'uses' => 'CommandesController@priseReservation'
+]);
+
+Route::get('moncompte');
 Route::get('/home', 'HomeController@index');

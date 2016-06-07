@@ -56,7 +56,7 @@ return [
             'driver' => 'mysql',
             'host' => env('DB_HOST', 'pressingdeshalles.fr'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'e4bdd'),
+            'database' => env('DB_DATABASE', 'bddE4'),
             'username' => env('DB_USERNAME', 'admin'),
             'password' => env('DB_PASSWORD', 'admin134459'),
             'charset' => 'utf8',
